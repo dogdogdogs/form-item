@@ -7,6 +7,59 @@
   <title>form-item</title>
 </head>
 <body>
+  <input type="text">
+  <input type="text" value="hello">
+  <input type="password">
+  <input type="text" placeholder="takashi">
+
+  <textarea name="fiid" cols="30" rows="10">aaa</textarea>
   
+  <h3>紐づけ</h3>
+  <label>名前 <input type="text" id="name"></label>
+
+  <label for="color"></label>
+  <select id="color">
+    <option value="">色</option>
+    <option value="">色</option>
+    <option value="" selected>色</option>
+    <option value="">色</option>
+    <option value="">色</option>
+    <option value="">色</option>
+  </select>
+
+  <fieldset>
+    <legend>お使いのスマホ（複数選択）</legend>
+    <label><input type="checkbox">iPhone</label>
+    <label><input type="checkbox" checked>Android</label>
+    <label><input type="checkbox">other</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>お使いのスマホ</legend>
+    <label><input type="radio" name="phone">iPhone</label>
+    <label><input type="radio" name="phone" checked>Android</label>
+    <label><input type="radio" name="phone">other</label>
+  </fieldset>
+
+  <p><input type="color"></p>
+
+  <p><input type="date"></p>
+
+  <p><input type="number"></p>
+
+  <p><input type="range"></p>
+
+  <input type="button" value="OK">
+  <button>OK</button>
+  <input type="button" value="OK" disabled>
+  <button disabled>OK</button>
+
+  <form action="process.php" method="post">
+    <label>担当者名<input type="text" name="username"></label>
+    <label>タスク<input type="text" name="task"></label>
+    <button>追加</button>
+  </form>
+
+
 </body>
 </html>
